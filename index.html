@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODA — магазин одежды</title>
+    
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="main.css?v=4">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════════════════════════ -->
+<header class="header">
+    <div class="header__inner">
+        <div class="header__logo">MODA</div>
+
+        <nav class="header__nav">
+            <a href="#" class="header__men">Мужское</a>
+            <a href="#" class="header__men">Женское</a>
+            <a href="#" class="header__men">Новинки</a>
+            <a href="#" class="header__men">Скидки</a>
+        </nav>
+
+        <div class="header__actions">
+            <a href="#" class="header__icon">🔍</a>
+            <a href="#" class="header__icon">🛒</a>
+            <a href="#" class="header__icon js-open-register" id="open-register" aria-label="Открыть форму регистрации" role="button">👤</a>
+        </div>
+    </div>
+</header>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     HERO SECTION
+     ═══════════════════════════════════════════════════════════════ -->
+<section class="hero">
+    <div class="hero__content">
+        <h1>Новая коллекция</h1>
+        <p>Откройте современные и удобные образы на каждый день</p>
+    </div>
+
+    <div class="hero__image">
+        <img src="hero.jpg" alt="Новая коллекция">
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     PRODUCTS SECTION
+     ═══════════════════════════════════════════════════════════════ -->
+
+<section class="products">
+    <h2 class="products__title">Популярные товары</h2>
+
+    <div class="products__grid">
+        <!-- PRODUCT CARD 1 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-new">NEW</span>
+                <a href="#" class="cart__top">
+                    <img src="Пальто.jpg" alt="Полупальто">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Полупальто Finn Flare</h3>
+                <p class="product-description">
+                    Укороченное пальто до бедра — стильный и практичный акцент для прохладной погоды.
+                </p>
+            </div>
+
+            <div class="product-price">270 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 2 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-new">NEW</span>
+                <a href="#" class="cart__top">
+                    <img src="Рубашка.jpg" alt="Рубашка">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Рубашка в полоску Zara</h3>
+                <p class="product-description">
+                    Лёгкая и свободная рубашка, удобная в ношении и устойчивая к истиранию.
+                </p>
+            </div>
+
+            <div class="product-price">47 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 3 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-sale">SALE</span>
+                <span class="badge badge-discount">-20%</span>
+                <a href="#" class="cart__top">
+                    <img src="Брюки.jpg" alt="Брюки">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Брюки H&amp;M</h3>
+                <p class="product-description">
+                    Чёрные брюки прямого кроя в тонкую полоску с эластичным поясом — комфортный вариант на каждый день.
+                </p>
+            </div>
+
+            <div class="product-price">80 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 4 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-new">NEW</span>
+                <a href="#" class="cart__top">
+                    <img src="Лоферы.jpg" alt="Лоферы">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Лоферы Uniqlo</h3>
+                <p class="product-description">
+                    Элегантные чёрные лоферы — воплощение классического стиля и комфорта.
+                </p>
+            </div>
+
+            <div class="product-price">359 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 5 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-new">NEW</span>
+                <a href="#" class="cart__top">
+                    <img src="Штаны спартивные.jpg" alt="Штаны спортивные">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Штаны Mango Man</h3>
+                <p class="product-description">
+                    Свободные серые штаны с эластичным поясом и шнурком — минималистичный вариант на каждый день.
+                </p>
+            </div>
+
+            <div class="product-price">24 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 6 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-sale">SALE</span>
+                <span class="badge badge-discount">-30%</span>
+                <a href="#" class="cart__top">
+                    <img src="Пальто-п.jpg" alt="Пальто">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Пальто ZARA</h3>
+                <p class="product-description">
+                    Чёрное пальто прямого кроя с классическим воротником — универсальный вариант на каждый день.
+                </p>
+            </div>
+
+            <div class="product-price">199 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 7 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-new">NEW</span>
+                <a href="#" class="cart__top">
+                    <img src="Кожаная куртка.jpg" alt="Кожаная куртка">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Кожаная куртка H&M</h3>
+                <p class="product-description">
+                    Чёрная кожаная куртка прямого кроя с молнией — универсальная база для повседневных образов.
+                </p>
+            </div>
+
+            <div class="product-price">38 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 8 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-sale">SALE</span>
+                <span class="badge badge-discount">-15%</span>
+                <a href="#" class="cart__top">
+                    <img src="Свитер.jpg" alt="Свитер">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Свитер SELA</h3>
+                <p class="product-description">
+                    Мягкий вязаный джемпер бежевого оттенка с молнией и объёмным воротником.
+                </p>
+            </div>
+
+            <div class="product-price">49 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 9 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-sale">SALE</span>
+                <a href="#" class="cart__top">
+                    <img src="Дублёнка.jpg" alt="Дублёнка">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Дублёнка COS</h3>
+                <p class="product-description">
+                    Тёмно-коричневая укороченная дублёнка прямого силуэта. Выполнена из мягкой замши с тёплой овчиной внутри.
+                </p>
+            </div>
+
+            <div class="product-price">129 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 10 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-sale">SALE</span>
+                <a href="#" class="cart__top">
+                    <img src="Брюки в полоску.jpg" alt="Брюки в полоску">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Брюки в полоску ARKET</h3>
+                <p class="product-description">
+                    Тёмно-коричневые брюки в полоску прямого кроя с поясом и застёжкой на молнии.
+                </p>
+            </div>
+
+            <div class="product-price">79 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 11 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-sale">SALE</span>
+                <a href="#" class="cart__top">
+                    <img src="джинсы.jpg" alt="Джинсы">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Джинсы COS</h3>
+                <p class="product-description">
+                    Прямые джинсы свободного кроя с расслабленным силуэтом.
+                </p>
+            </div>
+
+            <div class="product-price">89 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+
+        <!-- PRODUCT CARD 12 -->
+        <div class="cart">
+            <div class="product-img">
+                <span class="badge badge-new">NEW</span>
+                <a href="#" class="cart__top">
+                    <img src="Кардиган.jpg" alt="Кардиган">
+                </a>
+            </div>
+
+            <div class="product-info">
+                <h3 class="product-name">Кардиган Acne Studios</h3>
+                <p class="product-description">
+                    Прямой кардиган с длинными рукавами и открытым воротником.
+                </p>
+            </div>
+
+            <div class="product-price">149 $</div>
+            <div class="product-btn">
+                <button class="product-card__btn">Купить</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════ -->
+<footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__col">
+            <div class="footer__logo">MODA</div>
+            <p class="footer__text">
+                Современный магазин одежды с акцентом на стиль, комфорт и качество.
+            </p>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Kontakty</h4>
+            <ul class="footer__list">
+                <li><a href="#">Мужское</a></li>
+                <li><a href="#">Женское</a></li>
+                <li><a href="#">Новинки</a></li>
+                <li><a href="#">Скидки</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Информация</h4>
+            <ul class="footer__list">
+                <li><a href="#">Доставка и возврат</a></li>
+                <li><a href="#">Возраст</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+
+        <div class="footer__col">
+            <h4 class="footer__title">Контакты</h4>
+            <ul class="footer__list">
+                <li>📍 Капенгаген, Дания</li>
+                <li>📞 +45 123 456 789</li>
+                <li>✉ support@moda.com</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer__bottom">
+        © 2026 MODA — Все права защищены
+    </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════════
+     REGISTRATION MODAL
+     ═══════════════════════════════════════════════════════════════ -->
+<div class="modal modal--register" role="dialog" aria-modal="true" aria-hidden="true" id="registerModal">
+    <div class="modal__overlay" data-action="close"></div>
+    <div class="modal__dialog" role="document" aria-labelledby="registerTitle">
+        <button class="modal__close" aria-label="Закрыть" data-action="close">✕</button>
+
+        <div class="register">
+            <div class="register__inner">
+                <!-- ASIDE SECTION -->
+                <aside class="register__aside" aria-hidden="true">
+                    <div class="aside__decoration" aria-hidden="true"></div>
+                    <div class="aside__content">
+                        <div class="aside__logo">MODA</div>
+                        <h3 class="aside__title">Добро пожаловать</h3>
+                        <p class="aside__text">Присоединяйтесь к нашему сообществу и получайте персональные подборки и скидки.</p>
+                    </div>
+                </aside>
+
+                <!-- FORM SECTION -->
+                <div class="register__content">
+                    <h2 id="registerTitle">Создать аккаунт</h2>
+                    <p class="register__subtitle">Быстрая регистрация для покупок и отслеживания заказов</p>
+
+                    <form class="register__form" id="registerForm" novalidate>
+                        <!-- NAME FIELD -->
+                        <div class="form-row">
+                            <label class="form-field">
+                                <input id="register-name" type="text" name="name" required autocomplete="name" />
+                                <span class="label">Имя</span>
+                                <small class="error" aria-live="polite"></small>
+                            </label>
+                        </div>
+
+                        <!-- EMAIL FIELD -->
+                        <div class="form-row">
+                            <label class="form-field">
+                                <input id="register-email" type="email" name="email" required autocomplete="email" />
+                                <span class="label">Email</span>
+                                <small class="error" aria-live="polite"></small>
+                            </label>
+                        </div>
+
+                        <!-- PASSWORD FIELDS (2-COLUMN) -->
+                        <div class="form-row form-row--grid">
+                            <label class="form-field">
+                                <div class="input-wrap">
+                                    <input id="register-password" type="password" name="password" required autocomplete="new-password" minlength="8" />
+                                    <button type="button" class="password-toggle" aria-label="Показать пароль" aria-pressed="false">
+                                        <svg class="icon icon-eye" width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <svg class="icon icon-eye-off" width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7 .9-1.6 2-3 3.24-4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </button>
+                                </div>
+                                <span class="label">Пароль</span>
+                                <small class="error" aria-live="polite"></small>
+                            </label>
+
+                            <label class="form-field">
+                                <div class="input-wrap">
+                                    <input id="register-confirm" type="password" name="confirm" required autocomplete="new-password" minlength="8" />
+                                    <button type="button" class="password-toggle" aria-label="Показать пароль" aria-pressed="false">
+                                        <svg class="icon icon-eye" width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                        <svg class="icon icon-eye-off" width="18" height="18" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.94 17.94A10.94 10.94 0 0 1 12 19c-7 0-11-7-11-7 .9-1.6 2-3 3.24-4.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 3l18 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                    </button>
+                                </div>
+                                <span class="label">Повторите пароль</span>
+                                <small class="error" aria-live="polite"></small>
+                            </label>
+                        </div>
+
+                        <!-- ACTIONS -->
+                        <div class="form-row form-actions">
+                            <button type="submit" class="btn btn--primary">Создать аккаунт</button>
+                            <button type="button" class="btn btn--ghost" data-action="close">Отмена</button>
+                        </div>
+
+                        <div class="register__tos">Нажимая «Создать аккаунт», вы соглашаетесь с <a href="#">условиями</a>.</div>
+                    </form>
+
+                    <!-- SUCCESS STATE -->
+                    <div class="register__success" hidden>
+                        <div class="success__icon">✅</div>
+                        <h3>Спасибо — аккаунт создан!</h3>
+                        <p>Переадресация на главную...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SCRIPTS -->
+<script src="app.js"></script>
+
+</body>
+</html>
